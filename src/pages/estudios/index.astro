@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StudyCard from '../../components/StudyCard.astro';
+import { getCollection } from 'astro:content';
+const studies = (await getCollection('studies')).sort((a,b) => b.data.year - a.data.year || a.data.code.localeCompare(b.data.code));
+---
+<Layout title="Estudios" description="Estudios de Criterio Territorial: evidencia geográfica, social, económica y ambiental en contexto.">
+  <section class="page-intro container"><span class="meta">CT / ESTUDIOS</span><h1>Evidencia en contexto.</h1><p>Una colección de preguntas territoriales, métodos documentados y hallazgos para orientar decisiones.</p></section>
+  <section class="container collection" aria-label="Colección de estudios"><p class="meta muted">{studies.length} ESTUDIO / MERCADO · CIUDAD · SOCIEDAD · AMBIENTE · TERRITORIO</p>{studies.map(study => <StudyCard study={study} />)}</section>
+</Layout>

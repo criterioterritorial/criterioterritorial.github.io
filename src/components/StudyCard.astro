@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { study: CollectionEntry<'studies'> }
+const { study } = Astro.props;
+const { data } = study;
+---
+<article class="study-card">
+  <a class="study-image" href={`/estudios/${study.id}/`} tabindex="-1" aria-hidden="true"><img src={data.image} alt="" width="960" height="600" loading="lazy" /></a>
+  <div class="study-info">
+    <div class="meta">{data.code} <span class="status">{data.status}</span></div>
+    <h3><a href={`/estudios/${study.id}/`}>{data.title} <span aria-hidden="true">↗</span></a></h3>
+    <p>{data.summary}</p>
+    <div class="meta muted">{data.location} / {data.year}</div>
+  </div>
+</article>

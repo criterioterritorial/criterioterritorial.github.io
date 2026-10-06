@@ -1,0 +1,39 @@
+---
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/500.css';
+import '@fontsource/ibm-plex-sans/600.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '../styles/global.css';
+interface Props { title?: string; description?: string; image?: string }
+const { title, description = 'Inteligencia territorial y análisis geoespacial en México. Datos, territorio, decisión.', image = '/images/og.png' } = Astro.props;
+const pageTitle = title ? `${title} — Criterio Territorial` : 'Criterio Territorial — Datos, territorio, decisión.';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const nav = [['Estudios', '/estudios/'], ['Servicios', '/servicios/'], ['Metodología', '/metodologia/'], ['Acerca', '/acerca/'], ['Contacto', '/contacto/']];
+---
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title><meta name="description" content={description} />
+    <link rel="canonical" href={canonical} /><link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#152331" />
+    <meta property="og:type" content="website" /><meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Criterio Territorial" /><meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} /><meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(image, Astro.site)} /><meta property="og:image:alt" content="Criterio Territorial. Datos, territorio, decisión." />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header container">
+      <a class="wordmark" href="/" aria-label="Criterio Territorial, inicio">CRITERIO<br />TERRITORIAL<span class="brand-dot" aria-hidden="true"></span></a>
+      <nav aria-label="Navegación principal">{nav.map(([label, href]) => <a href={href} aria-current={Astro.url.pathname.startsWith(href) ? 'page' : undefined}>{label}</a>)}</nav>
+    </header>
+    <main id="contenido"><slot /></main>
+    <footer class="site-footer container">
+      <div><a class="footer-brand" href="/">CRITERIO TERRITORIAL</a><p>Inteligencia territorial y análisis geoespacial</p></div>
+      <a href="mailto:criterio.territorialmx@gmail.com">criterio.territorialmx@gmail.com</a>
+      <div class="footer-bottom meta"><span>© {new Date().getFullYear()} Criterio Territorial</span><span>MÉXICO / DATOS, TERRITORIO, DECISIÓN.</span></div>
+    </footer>
+  </body>
+</html>

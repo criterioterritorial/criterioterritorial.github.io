@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+const services = [['Análisis de localización','Evaluación del contexto territorial para comparar alternativas de ubicación, considerando población, actividad económica y accesibilidad.'],['Diagnóstico territorial','Lecturas integradas de las condiciones sociales, urbanas y ambientales de un área de interés.'],['Inteligencia de mercado','Análisis espacial de oferta, demanda potencial y entorno competitivo para apoyar decisiones de inversión.'],['Información geoespacial','Organización, depuración y análisis de datos geográficos; construcción de indicadores y productos cartográficos con propósito.']];
+---
+<Layout title="Servicios"><section class="page-intro container"><span class="meta">CT / SERVICIOS</span><h1>Análisis para decidir.</h1><p>Trabajamos a partir de una pregunta concreta. Definimos el alcance, la escala y los productos de análisis según las necesidades de cada proyecto.</p></section><section class="container rows" aria-label="Servicios">{services.map(([title,text],i) => <article><span class="meta">0{i+1}</span><h2>{title}</h2><p>{text}</p></article>)}</section><ContactCTA /></Layout>
