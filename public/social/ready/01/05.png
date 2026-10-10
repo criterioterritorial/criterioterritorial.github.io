@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title description">
+  <title id="title">Criterio Territorial — Datos, territorio, decisión.</title>
+  <desc id="description">Criterio Territorial: estudios y metodologías aplicadas a problemas territoriales en México.</desc>
+  <!-- Social Design v2 / CLOSING. Gráfico abstracto sin datos geográficos.
+       Los textos permanecen editables. Símbolos internos: sin dependencias externas. -->
+  <defs>
+    <symbol id="motif-grid" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.22">
+        <path d="M0 80H920 M0 240H920 M0 400H920 M0 560H920 M80 0V640 M240 0V640 M400 0V640 M560 0V640 M720 0V640 M880 0V640"/>
+        <path d="M70 240H90 M80 230V250 M390 400H410 M400 390V410 M710 560H730 M720 550V570" stroke-width="3"/>
+      </g>
+    </symbol>
+    <symbol id="motif-nodes" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="2.5">
+        <circle cx="80" cy="240" r="12"/><circle cx="400" cy="240" r="12"/>
+        <circle cx="400" cy="560" r="12"/><circle cx="720" cy="400" r="12"/>
+      </g>
+      <circle cx="720" cy="80" r="10" fill="#B8734A"/>
+    </symbol>
+    <symbol id="motif-paths" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="3" opacity="0.65">
+        <path d="M92 240H388 M400 252V548 M412 560H560V400H708 M720 388V90"/>
+        <path d="M400 228V80H708" stroke-dasharray="8 12"/>
+      </g>
+    </symbol>
+    <symbol id="motif-boundary" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="3" opacity="0.55">
+        <path d="M160 80V0H560 M880 160V480H800 M640 640H160V400"/>
+        <path d="M840 480H920 M880 440V520" stroke-width="1.5"/>
+      </g>
+    </symbol>
+  </defs>
+  <g id="background"><rect width="1080" height="1350" fill="#152331"/></g>
+  <g id="metadata"><text x="84" y="108" font-family="'IBM Plex Mono', monospace" font-size="22" font-weight="400" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">CT / TERRITORIO</tspan>
+  </text></g>
+  <g id="headline"><text x="84" y="330" font-family="'IBM Plex Sans', sans-serif" font-size="110" font-weight="500" letter-spacing="-2" fill="#F3F0E8">
+    <tspan x="84" dy="0">Datos,</tspan>
+    <tspan x="84" dy="123.20000000000002">territorio,</tspan>
+    <tspan x="84" dy="123.20000000000002">decisión.</tspan>
+  </text></g>
+  <g id="context"><text x="84" y="860" font-family="'IBM Plex Sans', sans-serif" font-size="42" font-weight="400" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">Estudios y metodologías aplicadas</tspan>
+    <tspan x="84" dy="50.4">a problemas territoriales en México.</tspan>
+  </text></g>
+  <g id="territorial-graphic" color="#F3F0E8" transform="translate(655 950)">
+    <use href="#motif-nodes" x="0" y="0" width="345" height="240"/>
+    <use href="#motif-paths" x="0" y="0" width="345" height="240"/>
+  </g>
+  <g id="website"><text x="84" y="1250" font-family="'IBM Plex Mono', monospace" font-size="24" font-weight="400" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">criterioterritorial.github.io</tspan>
+  </text></g>
+</svg>

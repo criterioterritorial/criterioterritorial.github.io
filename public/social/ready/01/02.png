@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title description">
+  <title id="title">Criterio Territorial — Los datos también tienen territorio.</title>
+  <desc id="description">Criterio Territorial conecta población, negocios, servicios y ambiente para comprender dónde ocurren y cómo se relacionan.</desc>
+  <!-- Social Design v2 / INFORMATION. Gráfico abstracto sin datos geográficos.
+       Los textos permanecen editables. Símbolos internos: sin dependencias externas. -->
+  <defs>
+    <symbol id="motif-grid" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.22">
+        <path d="M0 80H920 M0 240H920 M0 400H920 M0 560H920 M80 0V640 M240 0V640 M400 0V640 M560 0V640 M720 0V640 M880 0V640"/>
+        <path d="M70 240H90 M80 230V250 M390 400H410 M400 390V410 M710 560H730 M720 550V570" stroke-width="3"/>
+      </g>
+    </symbol>
+    <symbol id="motif-nodes" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="2.5">
+        <circle cx="80" cy="240" r="12"/><circle cx="400" cy="240" r="12"/>
+        <circle cx="400" cy="560" r="12"/><circle cx="720" cy="400" r="12"/>
+      </g>
+      <circle cx="720" cy="80" r="10" fill="#B8734A"/>
+    </symbol>
+    <symbol id="motif-paths" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="3" opacity="0.65">
+        <path d="M92 240H388 M400 252V548 M412 560H560V400H708 M720 388V90"/>
+        <path d="M400 228V80H708" stroke-dasharray="8 12"/>
+      </g>
+    </symbol>
+    <symbol id="motif-boundary" viewBox="0 0 920 640">
+      <g fill="none" stroke="currentColor" stroke-width="3" opacity="0.55">
+        <path d="M160 80V0H560 M880 160V480H800 M640 640H160V400"/>
+        <path d="M840 480H920 M880 440V520" stroke-width="1.5"/>
+      </g>
+    </symbol>
+  </defs>
+  <g id="background"><rect width="1080" height="1350" fill="#152331"/></g>
+  <g id="metadata"><text x="84" y="108" font-family="'IBM Plex Mono', monospace" font-size="22" font-weight="400" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">CT / TERRITORIO</tspan>
+  </text></g>
+  <g id="headline"><text x="84" y="250" font-family="'IBM Plex Sans', sans-serif" font-size="90" font-weight="500" letter-spacing="-2" fill="#F3F0E8">
+    <tspan x="84" dy="0">Los datos también</tspan>
+    <tspan x="84" dy="100.80000000000001">tienen territorio.</tspan>
+  </text></g>
+<g id="connections" stroke="#F3F0E8" stroke-width="2" fill="none" opacity="0.35"><path d="M444 586H530 M444 801H530 M280 640V741 M761 640V741"/></g>  <g id="relation-1"><text x="84" y="600" font-family="'IBM Plex Sans', sans-serif" font-size="36" font-weight="500" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">POBLACIÓN</tspan>
+  </text></g>
+  <g id="relation-2"><text x="565" y="600" font-family="'IBM Plex Sans', sans-serif" font-size="36" font-weight="500" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="565" dy="0">NEGOCIOS</tspan>
+  </text></g>
+  <g id="relation-3"><text x="84" y="815" font-family="'IBM Plex Sans', sans-serif" font-size="36" font-weight="500" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">SERVICIOS</tspan>
+  </text></g>
+  <g id="relation-4"><text x="565" y="815" font-family="'IBM Plex Sans', sans-serif" font-size="36" font-weight="500" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="565" dy="0">AMBIENTE</tspan>
+  </text></g>
+<circle cx="487" cy="586" r="7" fill="#B8734A"/>  <g id="context"><text x="84" y="1040" font-family="'IBM Plex Sans', sans-serif" font-size="42" font-weight="400" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">Dónde ocurren y cómo se relacionan</tspan>
+    <tspan x="84" dy="50.4">cambia la forma de entender un problema.</tspan>
+  </text></g>
+  <g id="identifier"><text x="84" y="1250" font-family="'IBM Plex Mono', monospace" font-size="22" font-weight="400" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="84" dy="0">CT</tspan>
+  </text></g>
+  <g id="slide-number"><text x="894" y="1250" font-family="'IBM Plex Mono', monospace" font-size="22" font-weight="400" letter-spacing="0" fill="#F3F0E8">
+    <tspan x="894" dy="0">02 / 05</tspan>
+  </text></g>
+</svg>
