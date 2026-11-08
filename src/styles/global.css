@@ -198,6 +198,14 @@ h3 {
   display:inline-block
 }
 
+.arrow-icon {
+  display:inline-block;
+  width:1em;
+  height:1em;
+  flex-shrink:0;
+  vertical-align:-.1em
+}
+
 .hero-rule {
   display:flex;
   justify-content:space-between;
@@ -360,6 +368,17 @@ h3 {
   margin-top:8px
 }
 
+.footer-contact {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-width:100%
+}
+
+.footer-contact a {
+  overflow-wrap:anywhere
+}
+
 .footer-bottom {
   width:100%;
   display:flex;
@@ -408,6 +427,15 @@ h3 {
 .rows p {
   color:var(--slate);
   max-width:540px
+}
+
+.service-copy p+p {
+  margin-top:14px
+}
+
+.rows .service-question {
+  color:var(--ink);
+  font-weight:500
 }
 
 .note {
@@ -650,7 +678,7 @@ h3 {
   gap:15px
 }
 
-.rows article p {
+.rows article>p,.rows article>.service-copy {
   grid-column:2
 }
 

@@ -1,6 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ContactCTA from '../components/ContactCTA.astro';
-const services = [['Análisis de localización','Evaluación del contexto territorial para comparar alternativas de ubicación, considerando población, actividad económica y accesibilidad.'],['Diagnóstico territorial','Lecturas integradas de las condiciones sociales, urbanas y ambientales de un área de interés.'],['Inteligencia de mercado','Análisis espacial de oferta, demanda potencial y entorno competitivo para apoyar decisiones de inversión.'],['Información geoespacial','Organización, depuración y análisis de datos geográficos; construcción de indicadores y productos cartográficos con propósito.']];
+const services = [
+  {
+    title: 'Análisis de localización',
+    question: '¿Qué cambia entre estas ubicaciones?',
+    delivery: 'Comparación con mapas, indicadores y observaciones sobre las condiciones que conviene verificar.',
+  },
+  {
+    title: 'Diagnóstico territorial',
+    question: '¿Qué caracteriza esta zona y qué necesita estudiarse con mayor detalle?',
+    delivery: 'Diagnóstico temático con cartografía, tablas e interpretación de las fuentes disponibles.',
+  },
+  {
+    title: 'Inteligencia de mercado',
+    question: '¿Cómo se distribuye la oferta relacionada con mi actividad?',
+    delivery: 'Análisis de oferta registrada y contexto territorial.',
+    note: 'Estimar demanda requiere definir el método y sus datos. Los conteos de establecimientos o población no equivalen a ventas previstas.',
+  },
+  {
+    title: 'Información geoespacial',
+    question: '¿Cómo preparo y actualizo mis mapas y tablas?',
+    delivery: 'Integración de fuentes, automatización de tareas y salidas reutilizables para estudios.',
+  },
+];
 ---
-<Layout title="Servicios"><section class="page-intro container"><span class="meta">CT / SERVICIOS</span><h1>Análisis para decidir.</h1><p>Trabajamos a partir de una pregunta concreta. Definimos el alcance, la escala y los productos de análisis según las necesidades de cada proyecto.</p></section><section class="container rows" aria-label="Servicios">{services.map(([title,text],i) => <article><span class="meta">0{i+1}</span><h2>{title}</h2><p>{text}</p></article>)}</section><ContactCTA /></Layout>
+<Layout title="Servicios">
+  <section class="page-intro container"><span class="meta">CT / SERVICIOS</span><h1>Análisis para decidir.</h1><p>Trabajamos a partir de una pregunta concreta. Definimos el alcance, la escala y los productos de análisis según las necesidades de cada proyecto.</p></section>
+  <section class="container rows" aria-label="Servicios">
+    {services.map(({ title, question, delivery, note },i) => <article>
+      <span class="meta">0{i+1}</span>
+      <h2>{title}</h2>
+      <div class="service-copy">
+        <p class="service-question">{question}</p>
+        <p><strong>Entrega orientativa:</strong> {delivery}</p>
+        {note && <p>{note}</p>}
+      </div>
+    </article>)}
+  </section>
+  <ContactCTA />
+</Layout>
